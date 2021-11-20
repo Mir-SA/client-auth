@@ -1,13 +1,82 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  padding: 1.2rem;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form input {
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  align-self: flex-end;
+  margin-top: .5rem;
+  border: none;
+  padding: .5rem 1rem;
+  background: blueviolet;
+  color: white;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.logout {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+img {
+  width: 120px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type=file] {
+    margin-left: 25%;
+    margin-top: .25rem;
+}
+
+.profile .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center !important;
+}
+
+.profile label {
+  margin-top: .75rem;
+}
+
+.profile input {
+  padding: .25rem;
+}
+
+.profile select {
+  padding: 0.25rem;
 }
